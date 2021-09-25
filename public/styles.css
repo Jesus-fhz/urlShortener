@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root{
+    --dark-color:#002240;
+}
+
+/* RESET MARGIN PADDING */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* BASIC STYLES */
+
+html, body{
+    background-color: #444444;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: var(--primary-text-color);
+    line-height: 1.6;
+    height: 100%;
+    width: 100%;
+}
+
+ h1{
+    font-weight:400;
+    line-height: 1.2;
+    margin: 15px 0px 0px 0px;
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 10px
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.card{
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin:10px;
+}
+
+.showcase-form{
+    height: 380px;
+    width: 100%;
+    padding: 40px;
+    z-index: 100;
+    
+}
+
+.showcase-form form{
+    display: flex;
+   flex-direction: column; 
+}
+.showcase-form .form-control{
+    margin: 30px 0;
+}
+
+.showcase-form input[type='text']{
+    border:0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding:3px;
+    font-size: 15px;
+}
+
+/* Removing outlines when focusing on input */
+.showcase-form input:focus{
+    outline: none;
+}
+
+.btn{
+    padding:10px 30px;
+    cursor: pointer;
+    background:#000;
+    color:#FFFFFF;
+    border:0;
+    border-radius: 5px;
+    margin: 30px 0;
+    font-size: 15px;
+    
+ }
+ 
+
+.btn-dark{
+    background-color : var(--dark-color);
+    color: #FFFFFF;
+    
+}
+
+.show-error{
+    font-size:15px;
+    color: #b40000;
+}
+
+
+.new-url a{
+    font-size:15px;
+    color: #0057a8;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.loading {    
+    float: right;
+    display: none;
+}

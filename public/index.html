@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Url Shortener</title>
+</head>
+<body>
+    <div class="container flex">
+      <div class="showcase-form card">
+          <h1>Url Shortener </i></h1>
+          <form id="formData" class="formData">
+            <div class="form-control">
+              <input type="text" name="url" id="url"  placeholder="https://www.example.com"  />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="customName"
+                id = "customName"
+                placeholder="Custom URL name"
+                
+              />
+            </div>
+            <div class="show-error"></div>
+            <div class="new-url"></div>
+            <button type="button"  id="sendData" name="sendData" class="btn btn-dark">Generate<i class="fa fa-spinner fa-spin loading"></i></button>
+          </form>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
